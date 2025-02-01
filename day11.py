@@ -1,36 +1,36 @@
 # #queue
-# class Queue:
-#     def __init__(self):
-#         self.q=[]
-#     def isEmpty(self):
-#         return self.q==[]
-#     def enqueue(self,ele):
-#         return self.q.append(ele)
-#     def dequeue(self):
-#         if self.isEmpty():
-#             return -1
-#         else:
-#             return self.q.pop(0)
-#     def peek(self):
-#         if self.isEmpty():
-#             return -1
-#         else:
-#             return self.q[0]
-#     def search(self,ele):
-#         if self.isEmpty():
-#             return -1
-#         elif ele in self.q:
-#             n= self.q.index(ele)                  
-#             return n
-#         else:
-#             return -2
-#     def display(self):
-#         if self.isEmpty():
-#             print("queue is empty")
-#         else:
-#             for i in self.q:
-#                 print(i,end=" ")
-#             print()       
+class Queue:
+    def __init__(self):
+        self.q=[]
+    def isEmpty(self):
+        return self.q==[]
+    def enqueue(self,ele):
+        return self.q.append(ele)
+    def dequeue(self):
+        if self.isEmpty():
+            return -1
+        else:
+            return self.q.pop(0)
+    def peek(self):
+        if self.isEmpty():
+            return -1
+        else:
+            return self.q[0]
+    def search(self,ele):
+        if self.isEmpty():
+            return -1
+        elif ele in self.q:
+            n= self.q.index(ele)                  
+            return n
+        else:
+            return -2
+    def display(self):
+        if self.isEmpty():
+            print("queue is empty")
+        else:
+            for i in self.q:
+                print(i,end=" ")
+            print()       
 
 import sys
 from collections import deque
