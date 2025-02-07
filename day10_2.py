@@ -35,7 +35,7 @@ while True:
         elif ret==-2:
             print("not found")
         else:
-            print("found at insex:",ret)
+            print("found at index:",ret)
     elif o==5:
         s.display()
     elif o==6:
